@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arunachalam Sathiyamoorthy - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        header {
+            background: #f4f4f4;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        nav {
+            background: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .project-card {
+            width: 300px;
+            margin: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        .skills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .skill-tag {
+            background: #f4f4f4;
+            margin: 5px;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        #contact {
+            text-align: center;
+            background: #f4f4f4;
+            padding: 2rem 0;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="\\10.10.16.25\e\Arunachalam S\Arunachalam S\pics\New\_DSC2881.JPG" alt="Arunachalam" class="profile-image">
+            <h1>Arunachalam Sathiyamoorthy</h1>
+            <p>Web Developer | Designer | Problem Solver</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>Dedicated Junior Engineer with 1 year of experience in technical support and a proven ability to surpass user expectations and enhance satisfaction. Proficient in tackling intricate technical challenges, streamlining troubleshooting procedures, and partnering with cross-functional teams to elevate product reliability. Adept at propelling user success and revenue through inventive solutions and exceptional problem-solving skills.</p>
+    </section>
+
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <h3>Deploying a Website using Dockerfile</h3>
+                <p>Deploying a project using Dockerfile.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Create a Portfolio Website</h3>
+                <p>Website for knowing the foundation of work.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Deploying a Kubernetes cluster</h3>
+                <p>Create a Kubernetes cluster using one master node and two worker node.</p>
+                <a href="#">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="container">
+        <h2>Skills</h2>
+        <div class="skills">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: arunachalams204@gmail.com</p>
+        <p>Workemail: arunachalam.s@thehindu.co.in</p>
+        <p>LinkedIn: https://shorturl.at/QrfUE</p>
+        <p>Docker: https://hub.docker.com/u/arunachalams204</p>
+        <p>X: https://tinyurl.com/426axmz6</p>
+    </section>
+
+    <footer>
+        <p>© 2024 Arunachalam Sathiyamoorthy. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Optional: Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
